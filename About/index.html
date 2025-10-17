@@ -196,61 +196,151 @@
     </div>
   </div>
 </section>
-<!-- Make sure Tailwind CSS is available -->
-<script src="https://cdn.tailwindcss.com"></script>
-
-<!-- Why Choose Section -->
-<section class="bg-white py-16 px-6 md:px-16">
-  <div class="max-w-6xl mx-auto flex flex-col-reverse md:flex-row items-center gap-10">
-
-    <div class="flex-1">
-      <p class="text-blue-800 font-semibold mb-2" id="o">Why Choose Oroki Hub?</p>
-      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 leading-tight" id="o">
-        Oroki Hub combines innovation, community, and opportunity to create lasting impact for youth, women, and businesses in Osun State.
-      </h2>
-
-      <!-- Feature list -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
-        <!-- Feature 01 -->
-        <div class="flex items-start gap-4">
-          <div class="flex-shrink-0 bg-blue-900 text-white rounded-lg w-10 h-10 flex justify-center items-center">
-            <span class="font-semibold">01</span>
+<section class="bg-white py-12 px-8 ">
+  <div class="container mx-auto flex flex-col md:flex-row items-center gap-10">
+       <div class="flex-1">
+      <h2 class="text-lg font-semibold text-blue-900 mb-3">Why Choose Oroki Hub?</h2>
+      <p class="text-xl font-semibold text-blue-900 leading-relaxed mb-6">
+        Our approach is unique because we combine the richness of local culture with 
+        the limitless potential of modern technology. We nurture creativity, support 
+        local entrepreneurs, and equip individuals with the skills to succeed in the digital economy.
+      </p>
+      <div class="grid md:grid-cols-2 gap-6 mt-8">
+        
+        <div>
+          <div class="flex items-center gap-2 mb-2">
+            <span class="bg-blue-900 text-white font-bold px-3 py-1 rounded">01</span>
           </div>
-          <div>
-            <h3 class="text-lg font-bold text-blue-900">Inclusive & Accessible</h3>
-            <p class="text-gray-600">
-              From secondary school students to PWDs, our programs are open to everyone.
-            </p>
-          </div>
+          <h3 class="font-semibold text-blue-900 text-lg">Inclusive & Accessible</h3>
+          <p class="text-gray-600 text-sm">
+            From secondary school students to PWDs, our programs are open to everyone.
+          </p>
         </div>
-
-        <!-- Feature 02 -->
-        <div class="flex items-start gap-4">
-          <div class="flex-shrink-0 bg-blue-900 text-white rounded-lg w-10 h-10 flex justify-center items-center">
-            <span class="font-semibold">02</span>
-          </div>
-          <div>
-            <h3 class="text-lg font-bold text-blue-900">Global & Local Partnerships</h3>
-            <p class="text-gray-600">
-              We connect Osun’s innovators with national and international opportunities.
-            </p>
-          </div>
+        <div>
+          <div class="flex items-center gap-2 mb-2">
+            <span class="bg-blue-900 text-white font-bold px-3 py-1 rounded">02</span>
+             </div>
+             <h3 class="font-semibold text-blue-900 text-lg">Global & Local Partnerships</h3>
+               <p class="text-gray-600 text-sm">
+                We connect Osun’s innovators with national and international opportunities.
+          </p>
         </div>
       </div>
     </div>
-
-    <!-- Right side: Image -->
     <div class="flex-1">
-      <img 
-        src="https://orokihub.com.ng/wp-content/uploads/2025/09/WHZ_6201-e1757211476178.jpg" 
-        alt="Oroki Hub Image" 
-        class="w-full rounded-2xl object-cover shadow-lg"
-      />
+      <img src="ai-for-educators-1.webp" alt="hero banner" class="her">
     </div>
-
   </div>
 </section>
+<!-- Impact / Count-up Section -->
+<section id="impact-section" class="py-20 bg-gray-50">
+  <div class="max-w-screen-xl mx-auto px-6">
+    <!-- Heading -->
+    <div class="text-center mb-12">
+      <h2 id="impact-heading" class="text-3xl font-extrabold sm:text-4xl">
+        Our Impact At A Glance
+      </h2>
+    </div>
 
+    <!-- Stats Box -->
+    <div class="bg-white rounded-2xl shadow-xl border border-gray-200 p-10">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+        <!-- Stat 1 -->
+        <div class="flex flex-col items-center">
+          <div id="stat1" class="text-5xl font-extrabold">0</div>
+          <div class="mt-2 text-lg font-medium">Students Reached</div>
+        </div>
+
+        <!-- Stat 2 -->
+        <div class="flex flex-col items-center">
+          <div id="stat2" class="text-5xl font-extrabold">0</div>
+          <div class="mt-2 text-lg font-medium">Women Entrepreneurs Supported</div>
+        </div>
+
+        <!-- Stat 3 -->
+        <div class="flex flex-col items-center">
+          <div id="stat3" class="text-5xl font-extrabold">0</div>
+          <div class="mt-2 text-lg font-medium">Communities Trained on Cybersecurity</div>
+        </div>
+
+        <!-- Stat 4 -->
+        <div class="flex flex-col items-center">
+          <div id="stat4" class="text-5xl font-extrabold">0</div>
+          <div class="mt-2 text-lg font-medium">Students Introduced to Maker Culture</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // 🎨 Easy color customization
+    const colors = {
+      heading: "#05047f",
+      numbers: "#1e40af", // Indigo-800
+      text: "#374151",    // Gray-700
+      background: "#ffffff"
+    };
+
+    // Apply color styles dynamically (safe-guard: make sure elements exist)
+    const headingEl = document.getElementById("impact-heading");
+    if (headingEl) headingEl.style.color = colors.heading;
+    document.querySelectorAll("#impact-section dd, #impact-section div[id^='stat']").forEach(el => el.style.color = colors.numbers);
+    document.querySelectorAll("#impact-section .mt-2").forEach(el => el.style.color = colors.text);
+    const sectionEl = document.getElementById("impact-section");
+    if (sectionEl) sectionEl.style.backgroundColor = colors.background;
+
+    // Counting targets
+    const counters = [
+      { id: "stat1", target: 5200, suffix: "+" },
+      { id: "stat2", target: 272, suffix: "+" },
+      { id: "stat3", target: 10, suffix: "+" },
+      { id: "stat4", target: 92, suffix: "+" }
+    ];
+
+    // Smooth count-up using requestAnimationFrame
+    function animateCount(element, endValue, duration = 1500, suffix = "") {
+      const startTime = performance.now();
+      function step(now) {
+        const progress = Math.min((now - startTime) / duration, 1);
+        const value = Math.floor(progress * endValue);
+        element.textContent = value + (progress === 1 ? suffix : "");
+        if (progress < 1) {
+          requestAnimationFrame(step);
+        }
+      }
+      requestAnimationFrame(step);
+    }
+
+    // Start all counters
+    function startCounters() {
+      counters.forEach(c => {
+        const el = document.getElementById(c.id);
+        if (!el) return;
+        // choose duration proportional to magnitude but bounded
+        const baseDuration = 1500;
+        const duration = Math.min(Math.max(baseDuration, c.target * 0.5), 3000);
+        animateCount(el, c.target, duration, c.suffix || "");
+      });
+    }
+
+    // Use IntersectionObserver to trigger when section is visible,
+    // but also fallback to immediate run for browsers without support.
+    if ("IntersectionObserver" in window && sectionEl) {
+      const obs = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            startCounters();
+            observer.disconnect();
+          }
+        });
+      }, { threshold: 0.25 });
+      obs.observe(sectionEl);
+    } else {
+      // Fallback — run immediately
+      startCounters();
+    }
+  </script>
+</section>
 
 </body>
 </html>
