@@ -170,8 +170,21 @@
 }
 .collab{
     background-color: rgb(43,114,255);
+    border-radius: 25px;
 }
 .jinus{
-    padding-top: 200px;
+    padding-top: 65px;
     padding-bottom: 50px;
+}
+.juib{
+    text-align: center;
+    font-family: Poppins, sans-serif;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 52.8px;
+    color: rgb(5, 4, 127);
+}
+.build{
+    color: white;
+    background-color: rgb(5,4,127);
 }
