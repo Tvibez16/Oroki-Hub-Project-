@@ -4,8 +4,324 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Program</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <script src="https://cdn.tailwindcss.com"></script>
+<header class="bg-gray-900" style="background-color: white;"  >
+  <nav aria-label="Global" class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
+    <div class="flex lg:flex-1">
+      <a href="#" class="-m-1.5 p-1.5">
+        <span class="sr-only">Your Company</span>
+<img src="https://orokihub.com.ng/wp-content/uploads/2025/09/ximage-1-300x164.png.pagespeed.ic.qD4Pe9C42l.png" alt="" class="h-[60px] w-auto" />
+      </a>
+    </div>
+    <div class="flex lg:hidden">
+      <button type="button" command="show-modal" commandfor="mobile-menu" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-400">
+        <span class="sr-only">Open main menu</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6">
+          <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </button>
+    </div>
     
+    <el-popover-group>
+    <button popovertarget="desktop-menu-product" class="flex items-center gap-x-1 text-sm font-semibold text-white">Menu</button>
+    <div class="hidden lg:flex items-center justify-center gap-x-12" >
+       <a href="#" class="text-sm font-semibold text-black">Programs</a>
+      <a href="#" class="text-sm font-semibold text-black">Impact</a>
+      <a href="#" class="text-sm font-semibold text-black">About</a>
+       </div>
+         </el-popover-group>
+       <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+            <a href="#" class="text-sm font-semibold text-white">Log in <span aria-hidden="true">&rarr;</span></a>
+      </div>
+    <button type="button" class="text-black bg-yellow-700 hover:bg-yellow-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-yellow-600 dark:hover:bg-blue-700 focus:outline-none yellow:focus:ring-yellow-800">join us</button>
+  </nav>
+  <el-dialog>
+    <dialog id="mobile-menu" class="backdrop:bg-transparent lg:hidden">
+      <div tabindex="0" class="fixed inset-0 focus:outline-none">
+        <el-dialog-panel class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gray-900 p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-100/10">
+          <div class="flex items-center justify-between">
+            <a href="#" class="-m-1.5 p-1.5">
+              <span class="sr-only">Your Company</span>
+              <img src="https://orokihub.com.ng/wp-content/uploads/2025/09/ximage-1-300x164.png.pagespeed.ic.qD4Pe9C42l.png"  alt="" class="h-8 w-auto" />
+            </a>
+            <button type="button" command="close" commandfor="mobile-menu" class="-m-2.5 rounded-md p-2.5 text-gray-400">
+              <span class="sr-only">Close menu</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6">
+                <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </button>
+          </div>
+          <div class="mt-6 flow-root">
+            <div class="-my-6 divide-y divide-white/10">
+              <div class="space-y-2 py-6">
+                <div class="-mx-3">
+                  <button type="button" command="--toggle" commandfor="products" class="flex w-full items-center justify-between rounded-lg py-2 pr-3.5 pl-3 text-base font-semibold text-white hover:bg-white/5">
+                    Product
+                    <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true" class="size-5 flex-none in-aria-expanded:rotate-180">
+                      <path d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" fill-rule="evenodd" />
+                    </svg>
+                  </button>
+                </div>
+                <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold text-white hover:bg-white/5">Features</a>
+                <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold text-white hover:bg-white/5">Marketplace</a>
+                <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold text-white hover:bg-white/5">Company</a>
+              </div>
+              <div class="py-6">
+                <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold text-white hover:bg-white/5">Log in</a>
+              </div>
+            </div>
+          </div>
+        </el-dialog-panel>
+      </div>
+    </dialog>
+  </el-dialog>
+</header>
+  <section class="bg-blue-600 text-blue text-center py-20 rounded-2xl mx-4 mt-6">
+  <h1 class="bg text-5xl font-bold mb-3">Our Programs</h1>
+    <p class="text-lg text-gray-200 mb-2">
+      <span class="font-semibold text-white">Home</span> 
+      <span class="text-gray-300">> Programs</span>
+    </p>
+    <p class="text-lg max-w-3xl mx-auto text-gray-100">
+      We design impactful programs that bridge the digital divide, empower communities, 
+        and create opportunities for growth.
+    </p><br>
+  </section>
+  <section class="abd" style="text-align: center;" >
+        What We Offer
+<br> </section>
+<section class="flex flex-col md:flex-row justify-center items-stretch gap-6 p-8 bg-white">
+     <div class="flex-1 bg-[#001F9D] text-white p-8 rounded-2xl flex flex-col items-center text-center">
+      <div class="bg-white/20 p-4 rounded-full mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-white" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M9 21h6v-2H9v2zM12 2C8.14 2 5 5.14 5 9v4l-2 2v1h18v-1l-2-2V9c0-3.86-3.14-7-7-7z"/>
+           </svg>
+      </div>
+    <h3 class="text-xl font-bold mb-2">Workshops & Training</h3>
+    <p class="text-base leading-relaxed">
+      A range of workshops, seminars, and training programs to help you master digital skills, from web development to data science.
+    </p>
+  </div>
+  <div class="flex-1 bg-gray-100 text-[#001F9D] p-8 rounded-2xl flex flex-col items-center text-center">
+    <div class="bg-[#001F9D]/10 p-4 rounded-full mb-4">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-[#001F9D]" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M12 12c2.21 0 4-1.79 4-4S14.21 4 12 4 8 5.79 8 8s1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+      </svg>
+    </div>
+    <h3 class="text-xl font-bold mb-2">Mentorship & Pre-Incubation</h3>
+    <p class="text-base leading-relaxed text-gray-600">
+      We support early-stage startups in Osun State by providing mentorship, physical resources, and access to pre-incubation services.
+    </p>
+  </div>
+  <div class="flex-1 bg-[#2176FF] text-white p-8 rounded-2xl flex flex-col items-center text-center">
+    <div class="bg-white/20 p-4 rounded-full mb-4">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-white" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M4 6h16v2H4zm0 4h16v2H4zm0 4h10v2H4z"/>
+      </svg>
+    </div>
+    <h3 class="text-xl font-bold mb-2">Collaborative Workspace</h3>
+    <p class="text-base leading-relaxed">
+      A state-of-the-art co-working environment designed for creativity, networking, and productivity.
+    </p>
+  </div>
+  <div class="flex-1 bg-gray-100 text-[#001F9D] p-8 rounded-2xl flex flex-col items-center text-center">
+    <div class="bg-[#001F9D]/10 p-4 rounded-full mb-4">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-[#001F9D]" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14a2 2 0 0 0 2-2V6c0-1.1-.9-2-2-2zM19 20H5V9h14v11z"/>
+      </svg>
+    </div>
+    <h3 class="text-xl font-bold mb-2">Tech Events & Hackathons</h3>
+    <p class="text-base leading-relaxed text-gray-600">
+      Regular events to challenge your skills, showcase your ideas, and collaborate on real-world solutions.
+    </p>
+  </div>
+</section>
+<section class="bg-white py-12 px-8 ">
+  <div class="container mx-auto flex flex-col md:flex-row items-center gap-10">
+       <div class="flex-1">
+      <h2 class="text-lg font-semibold text-blue-900 mb-3">Why Choose Oroki Hub?</h2>
+      <p class="text-xl font-semibold text-blue-900 leading-relaxed mb-6">
+        Our approach is unique because we combine the richness of local culture with 
+        the limitless potential of modern technology. We nurture creativity, support 
+        local entrepreneurs, and equip individuals with the skills to succeed in the digital economy.
+      </p>
+      <div class="grid md:grid-cols-2 gap-6 mt-8">
+        
+        <div>
+          <div class="flex items-center gap-2 mb-2">
+            <span class="bg-blue-900 text-white font-bold px-3 py-1 rounded">01</span>
+          </div>
+          <h3 class="font-semibold text-blue-900 text-lg">Inclusive & Accessible</h3>
+          <p class="text-gray-600 text-sm">
+            From secondary school students to PWDs, our programs are open to everyone.
+          </p>
+        </div>
+        <div>
+          <div class="flex items-center gap-2 mb-2">
+            <span class="bg-blue-900 text-white font-bold px-3 py-1 rounded">02</span>
+             </div>
+             <h3 class="font-semibold text-blue-900 text-lg">Global & Local Partnerships</h3>
+               <p class="text-gray-600 text-sm">
+                We connect Osun’s innovators with national and international opportunities.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="flex-1">
+      <img src="../pic.webp" alt="" class="">
+    </div>
+  </div>
+</section>
+<section class="pd" style="text-align: center; font-size:72px">
+       programs
+<br>
+</section> <br>
+   <section>
+   <section class="bg-white py-12 px-6 md:px-16">
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+    <div class="bg-white rounded-2xl shadow-lg p-6 text-center">
+  <img src="stem-oroki.jpg" alt="STEM" class="rounded-lg mb-4 mx-auto">
+      <h3 class="text-2xl font-bold text-[#001f54] mb-3">STEM and Entrepreneur Academy</h3>
+      <p class="text-gray-600 mb-4">
+        Empowering children, teenagers, and young adults through STEM learning and innovation.
+      </p>
+      <ul class="text-left text-gray-700 space-y-1 mb-6">
+        <li>Coding & Web Development</li>
+        <li>Robotics & Embedded Systems</li> 
+        <li>Preparing for the future of work</li> 
+        <li>STEM Bootcamps & Holiday Camps</li> 
+      </ul>
+      <button class="bg-[#001f54] text-white font-semibold py-2 px-6 rounded-lg hover:bg-[#003080]">
+        Learn more
+      </button>
+    </div>
+    <div class="bg-white rounded-2xl shadow-lg p-6 text-center">
+  <img src="ai-for-educators-e1757256600870.webp" alt="AI Training" class="rounded-lg mb-4 mx-auto">
+      <h3 class="text-2xl font-bold text-[#001f54] mb-3">AI & Data Literacy Training</h3>
+      <p class="text-gray-600 mb-4">
+        We equip youths, SMEs, and professionals with practical AI and data skills to stay relevant in the digital economy.
+      </p>
+      <ul class="text-left text-gray-700 space-y-1 mb-6">
+        <li> Using AI tools for business</li>
+        <li> Data awareness & digital rights</li>
+        <li> Preparing for the future of work</li>
+      </ul>
+      <button class="bg-[#001f54] text-white font-semibold py-2 px-6 rounded-lg hover:bg-[#003080]">
+        Explore
+      </button>
+    </div>
+    <div class="bg-white rounded-2xl shadow-lg p-6 text-center">
+  <img src="oroki-STEM-academy.jpg" alt="Digital Literacy" class="rounded-lg mb-4 mx-auto">
+      <h3 class="text-2xl font-bold text-[#001f54] mb-3">Digital Literacy Training</h3>
+      <p class="text-gray-600 mb-4">
+        We train SMEs, artisans, market women, and PWDs in digital literacy skills to enhance their businesses and everyday lives.
+      </p>
+      <ul class="text-left text-gray-700 space-y-1 mb-6">
+        <li> Digital skills for SMEs</li>
+        <li> Mobile literacy for artisans</li>
+        <li>Cybersecurity awareness</li>
+        <li>Inclusive learning for PWDs</li>
+      </ul>
+      <button class="bg-[#001f54] text-white font-semibold py-2 px-6 rounded-lg hover:bg-[#003080]">
+        Join a Training Today
+      </button>
+    </div>
+  </div>
+</section>
+<section>
+  <section class="bg-white py-12 px-6 md:px-16">
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-8"> 
+    <div class="bg-white rounded-2xl shadow-lg p-6 text-center">
+  <img src="oroki-entrepreneurship-academy-e1757257767895.jpg" alt="STEM" class="rounded-lg mb-4 mx-auto">
+      <h3 class="text-2xl font-bold text-[#001f54] mb-3">Mentorship & Pre-incubation</h3>
+      <p class="text-gray-600 mb-4">
+        We provide pre-incubation support, <br> 
+        mentorship, and resources for early- <br>
+        stage startups to grow sustainably.
+      </p>
+      <button class="bg-[#001f54] text-white font-semibold py-2 px-6 rounded-lg hover:bg-[#003080]">
+        Learn more
+      </button>
+    </div>
+            <div class="bg-white rounded-2xl shadow-lg p-6 text-center">
+  <img src="ai-for-educators-e1757256600870.webp" alt="AI Training" class="rounded-lg mb-4 mx-auto">
+      <h3 class="text-2xl font-bold text-[#001f54] mb-3">Collaborative Workspace</h3>
+      <p class="text-gray-600 mb-4">
+       Our coworking hub is designed for <br>
+        networking, collaboration, and <br>
+        creativity: a home for entrepreneurs,<br>
+         freelancers, and tech enthusiasts.
+      </p>
+     
+      <button class="bg-[#001f54] text-white font-semibold py-2 px-6 rounded-lg hover:bg-[#003080]">
+        Book a work space
+      </button>
+    </div>
+    <div class="bg-white rounded-2xl shadow-lg p-6 text-center">
+  <img src="orokihub-event-e1757257868960.jpg" alt="Digital Literacy" class="rounded-lg mb-4 mx-auto">
+      <h3 class="text-2xl font-bold text-[#001f54] mb-3">Tech Events & Meetups</h3>
+      <p class="text-gray-600 mb-4">
+         We organize regular hackathons,<br>
+         meetups, and tech challenges that <br>
+         bring innovators together to solve real <br>
+         -world problems.
+      </p>
+      
+      <button class="bg-[#001f54] text-white font-semibold py-2 px-6 rounded-lg hover:bg-[#003080]">
+        See Upcoming event
+      </button>
+    </div>
+  </div>
+</section>
+<section style="background-color: rgb(43,113,252); border-radius: 15px; padding-bottom: 4%; padding-top: 5%;" class="bg-blue-600 text-white text-center py-10 rounded-3xl mx-4 mt-6">i
+    <span class="lam" style="text-align: center; padding-top: 4%; ;">Join Us in <b style="background-color:rgb(5,4,127); color: white; border-radius: 7%; padding-left: 1%; padding-right: 1%;"> Building</b> Osun’s Innovation <br> 
+       Future</span> <br> <br>
+
+<h4 class="ola">Whether you are a student, entrepreneur, or partner, there’s a place for you at Oroki
+   Hub. Be part of our mission to drive innovation and opportunity for all.</h4> <br>
+<div class="flex items-center space-x-5 justify-center">
+    <button class="bg-[rgb(5,4,127)] text-white font-semibold py-4 px-8 rounded-md hover:scale-105 transition-transform duration-300 shadow-md">
+      Join The Hub
+    </button>
+    <div class="flex items-center text-[rgb(5,4,127)] font-semibold">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M3 5a2 2 0 012-2h3.28a2 2 0 011.977 1.684l.364 2.184a2 2 0 01-.51 1.658L8.21 10.79a16.001 16.001 0 006 6l2.263-2.263a2 2 0 011.659-.51l2.183.364A2 2 0 0121 16.72V20a2 2 0 01-2 2h-1C9.163 22 2 14.837 2 6V5z" />
+      </svg>
+      <span style="font-size: 22px; font-weight: 500; line-height: 24.2px;">+234 816 070 0224</span>
+    </div>
+  </div>
+</section>
+<section style="padding-left: 2%; padding-top: 3%;">
+<p class="zip">
+  Get In Touch
+</p><br>
+<p class="col">
+  Let’s Work Together To <br>
+   Build Osun’s Future
+</p><br>
+<p class="man">
+  Partner with Oroki Hub to empower youth, support SMEs, and strengthen our <br>
+   local innovation ecosystem
+</p>
+</section>
+
+<section>
+  <footer class="flex-footer">
+    <section>
+      <div class="flex-footer-container">
+        <div class="flex-logo-container">
+          <img src="https://orokihub.com.ng/wp-content/uploads/2025/09/ximage-1-300x164.png.pagespeed.ic.qD4Pe9C42l.png" alt="" class="logon">
+        </div>
+      </div>
+    </section>
+ </footer>
+</section>
+    
+</body>
+</html>
 </body>
 </html>
