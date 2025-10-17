@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impact</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Include this script tag or install @tailwindplus/elements via npm: -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script> -->
+<header class="bg-gray-900" style="background-color: white;"  >
+  <nav aria-label="Global" class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
+    <div class="flex lg:flex-1">
+      <a href="#" class="-m-1.5 p-1.5">
+        <span class="sr-only">Your Company</span>
+<img src="https://orokihub.com.ng/wp-content/uploads/2025/09/ximage-1-300x164.png.pagespeed.ic.qD4Pe9C42l.png" alt="" class="h-[60px] w-auto" />
+      </a>
+    </div>
+    <div class="flex lg:hidden">
+      <button type="button" command="show-modal" commandfor="mobile-menu" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-400">
+        <span class="sr-only">Open main menu</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6">
+          <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </button>
+    </div>
+    
+    <el-popover-group>
+    <button popovertarget="desktop-menu-product" class="flex items-center gap-x-1 text-sm font-semibold text-white">Menu</button>
+    <div class="hidden lg:flex items-center justify-center gap-x-12" >
+       <a href="#" class="text-sm font-semibold text-black">Programs</a>
+      <a href="#" class="text-sm font-semibold text-black">Impact</a>
+      <a href="#" class="text-sm font-semibold text-black">About</a>
+    </div>
+    </el-popover-group>
+    <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+      <a href="#" class="text-sm font-semibold text-white">Log in <span aria-hidden="true">&rarr;</span></a>
+    </div>
+    <button type="button" class="text-white bg-yellow-700 hover:bg-yellow-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-yellow-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-yellow-800">join us</button>
+  </nav>
+  
+  <el-dialog>
+    <dialog id="mobile-menu" class="backdrop:bg-transparent lg:hidden">
+      <div tabindex="0" class="fixed inset-0 focus:outline-none">
+        <el-dialog-panel class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gray-900 p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-100/10">
+          <div class="flex items-center justify-between">
+            <a href="#" class="-m-1.5 p-1.5">
+              <span class="sr-only">Your Company</span>
+              <img src="https://orokihub.com.ng/wp-content/uploads/2025/09/ximage-1-300x164.png.pagespeed.ic.qD4Pe9C42l.png"  alt="" class="h-8 w-auto" />
+            </a>
+            <button type="button" command="close" commandfor="mobile-menu" class="-m-2.5 rounded-md p-2.5 text-gray-400">
+              <span class="sr-only">Close menu</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6">
+                <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </button>
+          </div>
+          <div class="mt-6 flow-root">
+            <div class="-my-6 divide-y divide-white/10">
+              <div class="space-y-2 py-6">
+                <div class="-mx-3">
+                  <button type="button" command="--toggle" commandfor="products" class="flex w-full items-center justify-between rounded-lg py-2 pr-3.5 pl-3 text-base font-semibold text-white hover:bg-white/5">
+                    Product
+                    <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true" class="size-5 flex-none in-aria-expanded:rotate-180">
+                      <path d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" fill-rule="evenodd" />
+                    </svg>
+                  </button>
+                  
+                </div>
+                <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold text-white hover:bg-white/5">Features</a>
+                <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold text-white hover:bg-white/5">Marketplace</a>
+                <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold text-white hover:bg-white/5">Company</a>
+              </div>
+              <div class="py-6">
+                <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold text-white hover:bg-white/5">Log in</a>
+              </div>
+            </div>
+          </div>
+        </el-dialog-panel>
+      </div>
+    </dialog>
+  </el-dialog>
+</header>
+<section style="background-color: rgb(43,113,252); border-radius: 15px; padding-bottom: 5%; padding-top: 8%;" class="bg-blue-600 text-white text-center py-10 rounded-3xl mx-4 mt-6">
+   
+    <span class="po" style="text-align: center; padding-top: 4%; ;">Our impact in osun state and Beyond</span>
+    <p class="text-lg text-gray-200 mb-2">
+      <span class="font-semibold text-white">Home</span> 
+      <span class="on"> >impact</span>
+    </p>
+<h4 class="ola mb-6 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400" style="text-align: center;">At   Oroki Innovation Hub, impact is not just about numbers — it’s about transformed lives, empowered communities, and thriving businesses. Here’s how we are shaping the future through technology, innovation, and collaboration.</h4>
+</section>
+ <!-- Include this script tag or install @tailwindplus/elements via npm: -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script> -->
+<div class="flex flex-col md:flex-row gap-4 p-4">
+  <div class="flex-1 bg-[#001D81] text-white p-6 rounded-lg shadow-lg flex flex-col justify-center items-center text-center">
+    <div class="text-5xl font-bold mb-2">8,250+</div>
+    <div class="text-sm">students reached</div>
+  </div>
+  <div class="flex-1 bg-[#EBEBEB] text-[#555555] p-6 rounded-lg shadow-lg flex flex-col justify-center items-center text-center">
+    <div class="text-5xl font-bold mb-2" style="font-size: 69px; font-weight: 600; line-height: 69px;">272</div>
+    <div class="text-sm" style="font-size: 19px;">women entrepreneurs supported</div>
+  </div>
+  <div class="flex-1 bg-[#FFD700] text-[#001D81] p-6 rounded-lg shadow-lg flex flex-col justify-center items-center text-center">
+    <div class="text-5xl font-bold mb-2" style="font-size: 69px; font-weight: 600; line-height: 69px;">10</div>
+    <div class="text-sm" style="font-size: 19px;">communities trained on cybersecurity</div>
+  </div>
+  <div class="flex-1 bg-[#001D81] text-white p-6 rounded-lg shadow-lg flex flex-col justify-center items-center text-center">
+    <div class="text-5xl font-bold mb-2" style="font-size: 69px; font-weight: 600; line-height: 69px;">92</div>
+    <div class="text-sm" style="font-size: 19px;">students introduced to maker culture</div>
+  </div>
+</div>
+ <section class="sto">
+    Story Highlights
+ </section>
+ <section>
+  <div class="flex-academic-container">
+    <div class="flex-impact-container">
+      <div class="flex-impact-container-1">
+        <img src="https://orokihub.com.ng/wp-content/uploads/2025/09/skill-them-young-1-1536x1152.jpg" alt="skill them young" class="skill">
+      </div><br>
+      <div class="flex-impact-container-2">
+        <h2 class="stim" style="padding-left: 115px;">Stem Academy Impact</h2><br>
+        <p class="impt" style="text-align: center; padding-left: 100px">
+          From coding bootcamps to holiday<br> 
+          buildathons, we’ve equipped<br> 
+          thousands of secondary school<br> 
+          students with hands-on STEM skills,<br>
+          sparking early interest in technology<br>
+          and innovation.
+        </p>
+      </div>
+    </div>
+     <div class="flex-impact-container">
+      <div class="flex-impact-container-1">
+        <img src="https://orokihub.com.ng/wp-content/uploads/2025/09/WHZ_6201-e1757211476178.jpg" alt="skill them young" class="skill">
+      </div><br>
+      <div class="flex-impact-container-2">
+        <h2 class="stim" style="padding-left: 115px;">AI & Data Literacy Impact</h2><br>
+        <p class="impt" style="text-align: center; padding-left: 100px">
+          Preparing the next generation for the <br>
+           future of work by training educators,<br> 
+          SMEs and youths on AI tools, <br>
+           responsible usage,<br>
+           and data-driven decision-making.<br> 
+          
+        </p>
+      </div>
+    </div>
+    <div class="flex-impact-container">
+      <div class="flex-impact-container-1">
+        <img src="https://orokihub.com.ng/wp-content/uploads/2025/09/osun-cyberguard-1536x1028.jpeg" alt="skill them young" class="skill">
+      </div><br>
+      <div class="flex-impact-container-2">
+        <h2 class="stim" style="padding-left: 115px;">Digital Literacy Training</h2><br>
+        <p class="impt" style="text-align: center; padding-left: 100px">
+          We’ve trained artisans, market<br> 
+          women, PWDs, and local businesses<br> 
+          to use digital tools for growth and to<br> 
+          stay safe online. Our<br>
+          OsunCyberGuard outreach has<br>
+          touched over 10 communities.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+ <section>
+  <div class="flex-academic-container">
+    <div class="flex-impact-container">
+      <div class="flex-impact-container-1">
+        <img src="https://orokihub.com.ng/wp-content/uploads/2025/09/girlsinSTEM-e1757259928391.jpg" alt="skill them young" class="skil">
+      </div>
+      <div class="flex-impact-container-2">
+       <h2 class="stim" style="padding-left: 200px;">Girls in STEM Impact</h2><br>
+        <p class="impt" style="text-align: center; padding-left: 100px">
+        Over 20 girls empowered with digital and STEM training, <br>
+         building the confidence and skills needed to pursue careers <br>
+         in science and technology.  
+        </p>
+      </div>
+    </div>
+    <div class="flex-impact-container">
+      <div class="flex-impact-container-1">
+        <img src="https://orokihub.com.ng/wp-content/uploads/2025/09/oroki-entrepreneurship-academy-1-e1757260087908.jpg" alt="skill them young" class="ski">
+      </div>
+      <div class="flex-impact-container-2">
+        <h2 class="stim" style="padding-left: 200px;">Entrepreneurship Academy Impact</h2><br>
+        <p class="impt" style="text-align: center; padding-left: 100px">
+        Through mentorship and pre-incubation, we’ve guided <br>
+         startups and entrepreneurs in Osun State with business <br>
+         development, networking, and investor readiness.  
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="su">
+  our partners
+</section>
+<section>
+  <div class="flex-partners-container">
+    <div class="flex-partners-container-1">
+      <img src="https://orokihub.com.ng/wp-content/uploads/2025/09/cropped-cropped-NITDA-Logo-new-03.png" alt="NITDA logo" class="nitda">
+    </div>
+    <div class="flex-partners-container-2">
+      <img src="https://orokihub.com.ng/wp-content/uploads/2025/09/osun-tag-e1757205944317.jpg" alt="osun state logo" class="osun">
+    </div>
+    <div class="flex-partners-container-3">
+      <img src="https://orokihub.com.ng/wp-content/uploads/2025/09/AIN-LG-2-1.webp" alt="ain logo" class="ain">
+    </div>
+  </div>
+</section>
+<section style="background-color: rgb(43,113,252); border-radius: 15px; padding-bottom: 4%; padding-top: 5%;" class="bg-blue-600 text-white text-center py-10 rounded-3xl mx-4 mt-6">
+   
+    <span class="lam" style="text-align: center; padding-top: 4%; ;">Join Us in <b style="background-color:rgb(5,4,127); color: white; border-radius: 7%; padding-left: 1%; padding-right: 1%;"> Building</b> Osun’s Innovation <br> 
+       Future</span> <br> <br>
+
+<h4 class="ola">Whether you are a student, entrepreneur, or partner, there’s a place for you at Oroki
+   Hub. Be part of our mission to drive innovation and opportunity for all.</h4>
+<div class="flex items-center space-x-5 justify-center">
+    <button class="bg-[rgb(5,4,127)] text-white font-semibold py-4 px-8 rounded-md hover:scale-105 transition-transform duration-300 shadow-md">
+      Join The Hub
+    </button>
+    <div class="flex items-center text-[rgb(5,4,127)] font-semibold">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M3 5a2 2 0 012-2h3.28a2 2 0 011.977 1.684l.364 2.184a2 2 0 01-.51 1.658L8.21 10.79a16.001 16.001 0 006 6l2.263-2.263a2 2 0 011.659-.51l2.183.364A2 2 0 0121 16.72V20a2 2 0 01-2 2h-1C9.163 22 2 14.837 2 6V5z" />
+      </svg>
+      <span style="font-size: 22px; font-weight: 500; line-height: 24.2px;">+234 816 070 0224</span>
+    </div>
+  </div>
+</section>
+<section style="padding-left: 2%; padding-top: 3%;">
+<p class="zip">
+  Get In Touch
+</p><br>
+<p class="col">
+  Let’s Work Together To <br>
+   Build Osun’s Future
+</p><br>
+<p class="man">
+  Partner with Oroki Hub to empower youth, support SMEs, and strengthen our <br>
+   local innovation ecosystem
+</p>
+</section>
+
+
+</body>
+</html>

@@ -1,0 +1,205 @@
+.po{
+ font-family: Poppins, sans-serif;
+font-size: 54px;
+font-weight: 500;
+line-height: 56.1px;
+color: rgb(5, 4, 127);  
+}
+.ola{
+    font-family: Poppins, sans-serif;
+font-size: 17px;
+font-weight: 400;
+line-height: 21px;
+color: rgb(221,231,255);
+padding-bottom: 4%;
+padding-left: 4%;
+padding-right: 4%;
+}
+.sto{
+    font-family: Poppins, sans-serif;
+font-size: 45px;
+font-weight: 500;
+line-height: 52.8px;
+color: rgb(5, 4, 127);
+text-align: center;
+padding-top: 4%;
+padding-bottom: 4%;
+}
+.on{
+    font-family: Poppins, sans-serif;
+font-size: 18.4px;
+font-weight: 500;
+line-height: 27.6px;
+color: rgb(5, 4, 127);
+}
+.flex-academic-container{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(248,248,248);
+}
+.skill{
+    width: 300px;
+    height: 200px;
+    border-radius: 20px;
+    margin: 2%;
+    padding-left: 10%;
+    padding-top: 5%;
+}
+.flex-impact-container{
+    display: flex;
+    flex-direction: column;
+}
+.stim{
+    font-family: Poppins, sans-serif;
+    font-size: 20.8px;
+    font-weight: 600;
+    line-height: 22.88px;
+    color: rgb(5, 4, 127);
+}
+.flex-impact-container-1{
+    padding-top: 20px;
+    padding-left: 60px;
+}
+.impt{
+    font-family: Poppins, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: rgb(122, 122, 122);
+}
+
+
+
+
+.flex-academic-container{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(248,248,248);
+    padding-left: 5%;
+}
+.skil{
+    width: 500px;
+    height: 300px;
+    border-radius: 10px;
+    margin: 5%;
+    padding-left: 6%;
+    padding-top: 5%;
+}
+.flex-impact-container{
+    display: flex;
+    flex-direction: column;
+}
+.stim{
+    font-family: Poppins, sans-serif;
+    font-size: 20.8px;
+    font-weight: 600;
+    line-height: 22.88px;
+    color: rgb(5, 4, 127);
+}
+.flex-impact-container-1{
+    padding-top: 20px;
+    padding-left: 50px;
+}
+.impt{
+    font-family: Poppins, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: rgb(122, 122, 122);
+}
+.ski{
+     width: 500px;
+    height: 300px;
+    border-radius: 10px;
+    margin: 5%;
+    padding-left: 5%;
+    padding-top: 5%;
+}
+.su{
+    font-family: Poppins, sans-serif;
+font-size: 45px;
+font-weight: 500;
+line-height: 52.8px;
+color: rgb(5, 4, 127);
+text-align: center;
+padding-top: 4%;
+padding-bottom: 4%;
+}
+.flex-partners-container{
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+    padding-left: 140px;
+}
+.nitda{
+    width: 200px;
+    height: 50px;
+    padding-left: 50px;
+}
+.partners{
+    font-family: Poppins, sans-serif;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 52.8px;
+    color: rgb(5, 4, 127);
+    text-align: center;
+    padding-top: 120px;
+}
+.flex-partners-container-2{
+    padding-left: 120px;
+}
+.flex-partners-container-3{
+    background-color: rgb(255,210,0);
+    border-radius: 25px;
+    width: 300px;
+    height: 200px;
+}
+.srvcs{
+    font-family: Roboto, sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 22px;
+    color: rgb(0, 37, 142);
+    padding-top: 30px;
+    text-align: center;
+}
+.lam{
+    font-family: Poppins, sans-serif;
+font-size: 48px;
+font-weight: 500;
+line-height: 52.8px;
+color: rgb(5, 4, 127);
+}
+.ola{
+    font-family: Poppins, sans-serif;
+font-size: 17px;
+font-weight: 400;
+line-height: 24px;
+color: rgb(255, 255, 255);
+text-align: center;
+padding-left: 15%;
+padding-right: 15%;
+}
+.zip{
+    font-family: Roboto, sans-serif;
+font-size: 20px;
+font-weight: 500;
+line-height: 16.5088px;
+color: rgb(0, 37, 142);
+
+}
+.col{
+    font-family: Poppins, sans-serif;
+font-size: 48px;
+font-weight: 500;
+line-height: 52.8px;
+color: rgb(5, 4, 127);
+font-weight: 5o8;
+}
+.man{
+    font-family: Poppins, sans-serif;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+color: rgb(122, 122, 122);
+}
