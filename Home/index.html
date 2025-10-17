@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Include this script tag or install `@tailwindplus/elements` via npm: -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script> -->
+<header class="bg-gray-900" style="background-color: white;"  >
+  <nav aria-label="Global" class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
+    <div class="flex lg:flex-1">
+      <a href="file:///C:/Users/Owner/Desktop/Oroki-hub-project-1/Home/index.html" class="-m-1.5 p-1.5">
+        <span class="sr-only">Your Company</span>
+<img src="https://orokihub.com.ng/wp-content/uploads/2025/09/ximage-1-300x164.png.pagespeed.ic.qD4Pe9C42l.png" alt="" class="h-[60px] w-auto" />
+      </a>
+    </div>
+    <div class="flex lg:hidden">
+      <button type="button" command="show-modal" commandfor="mobile-menu" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-400">
+        <span class="sr-only">Open main menu</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6">
+          <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </button>
+    </div>
+    
+    <el-popover-group>
+    <button popovertarget="desktop-menu-product" class="flex items-center gap-x-1 text-sm font-semibold text-white">Menu</button>
+    <div class="navitems">
+      <div class="hidden lg:flex items-center justify-center gap-x-12" >
+        <a href="file:///C:/Users/Owner/Desktop/Oroki-hub-project-1/program/index.html" class="text-sm font-semibold text-black">Programs</a>
+        <a href="#" class="text-sm font-semibold text-black">Impact</a>
+        <a href="#" class="text-sm font-semibold text-black">About</a>
+      </div>
+    </div>
+    </el-popover-group>
+    <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+  <a href="#" class="text-sm font-semibold text-white">Log in <span aria-hidden="true">&rarr;</span></a>
+    </div>
+  </nav>
+  <el-dialog>
+    <dialog id="mobile-menu" class="backdrop:bg-transparent lg:hidden">
+      <div tabindex="0" class="fixed inset-0 focus:outline-none">
+        <el-dialog-panel class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gray-900 p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-100/10">
+          <div class="flex items-center justify-between">
+            <a href="#" class="-m-1.5 p-1.5">
+              <span class="sr-only">Your Company</span>
+              <img src="https://orokihub.com.ng/wp-content/uploads/2025/09/ximage-1-300x164.png.pagespeed.ic.qD4Pe9C42l.png"  alt="" class="h-8 w-auto" />
+            </a>
+            <button type="button" command="close" commandfor="mobile-menu" class="-m-2.5 rounded-md p-2.5 text-gray-400">
+              <span class="sr-only">Close menu</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6">
+                <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </button>
+          </div>
+          <div class="mt-6 flow-root">
+            <div class="-my-6 divide-y divide-white/10">
+              <div class="space-y-2 py-6">
+                <div class="-mx-3">
+                  <button type="button" command="--toggle" commandfor="products" class="flex w-full items-center justify-between rounded-lg py-2 pr-3.5 pl-3 text-base font-semibold text-white hover:bg-white/5">
+                    Product
+                    <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true" class="size-5 flex-none in-aria-expanded:rotate-180">
+                      <path d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" fill-rule="evenodd" />
+                    </svg>
+                  </button>
+                  
+                </div>
+                <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold text-white hover:bg-white/5">Features</a>
+                <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold text-white hover:bg-white/5">Marketplace</a>
+                <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold text-white hover:bg-white/5">Company</a>
+              </div>
+              <div class="py-6">
+                <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold text-white hover:bg-white/5">Log in</a>
+              </div>
+            </div>
+          </div>
+        </el-dialog-panel>
+      </div>
+    </dialog>
+  </el-dialog>
+</header>
+<main>
+  <section>
+    <div class="flex-container">
+      <img src="C:\Users\Owner\Pictures\oroki hero pic.jpg" alt="oroki hub" class="hero">
+      <div class="flex-container-1" style="overlay: text;">
+        
+      </div>
+      <div class="flex-container-2"></div>
+    </div>
+  </section>
+</main>
+<section>
+  <div class="flex-about-container">
+    <div class="flex-about-container-1">
+      <h3 class="abtint">About Us</h3>
+      <h2 class="inno">Building Osun’s
+        <br> Innovation
+        <br> Ecosystem</h2>
+        <p class="abt">Oroki Innovation Hub is a community space designed to<br>
+            bridge the digital divide, reduce unemployment, and<br>
+            empower innovators. Through incubation, training, and<br>
+            mentorship, we are shaping the next generation of changemakers.</p>
+            <a href="https://orokihub.com.ng/about" class="read"><button class="rdmr">Read More</button></a>
+    </div>
+    <div class="flex-about-container-2">
+      <h3 class="vision">Our Vision</h3>
+      <p class="vsnit">A thriving ecosystem where<br>
+        every youth, woman, and SME<br>
+        can access opportunities to<br>
+        grow through technology and<br>
+        innovation.</p>
+    </div>
+    <div class="flex-about-container-3">
+      <h3 class="vision">Our Mission</h3>
+      <p class="vsnit">To bridge the digital divide,<br>
+        empower entrepreneurs, and<br>
+        drive inclusive innovation in<br>
+        Osun State.</p>
+    </div>
+  </div>
+</section>
+<section>
+  <h2 class="partners">Our Partners</h2>
+  <div class="flex-partners-container">
+    <div class="flex-partners-container-1">
+      <img src="C:\Users\Owner\Pictures\cropped-cropped-NITDA-Logo-new-03.png" alt="NITDA logo" class="nitda">
+    </div>
+    <div class="flex-partners-container-2">
+      <img src="C:\Users\Owner\Pictures\osun-tag-e1757205944317.jpg" alt="osun state logo" class="osun">
+    </div>
+    <div class="flex-partners-container-3">
+      <img src="C:\Users\Owner\Pictures\AIN-LG-2-1.webp" alt="ain logo" class="ain">
+    </div>
+  </div>
+</section>
+<section>
+  <h3 class="srvcs"><b>Our Services</b></h3>
+  <div class="flex-services-container">
+    <div class="flex-services-container-1"></div>
+    <div class="flex-services-container-2"></div>
+  </div>
+  <div>
+    <div></div>
+    <div></div>
+  </div>
+</section>
+<section class="bg-white py-12 px-8 ">
+  <div class="container mx-auto flex flex-col md:flex-row items-center gap-10">
+       <div class="flex-1">
+      <h2 class="text-lg font-semibold text-blue-900 mb-3">Why Choose Oroki Hub?</h2>
+      <p class="text-xl font-semibold text-blue-900 leading-relaxed mb-6">
+        Our approach is unique because we combine the richness of local culture with 
+        the limitless potential of modern technology. We nurture creativity, support 
+        local entrepreneurs, and equip individuals with the skills to succeed in the digital economy.
+      </p>
+      <div class="grid md:grid-cols-2 gap-6 mt-8">
+        
+        <div>
+          <div class="flex items-center gap-2 mb-2">
+            <span class="bg-blue-900 text-white font-bold px-3 py-1 rounded">01</span>
+          </div>
+          <h3 class="font-semibold text-blue-900 text-lg">Inclusive & Accessible</h3>
+          <p class="text-gray-600 text-sm">
+            From secondary school students to PWDs, our programs are open to everyone.
+          </p>
+        </div>
+        <div>
+          <div class="flex items-center gap-2 mb-2">
+            <span class="bg-blue-900 text-white font-bold px-3 py-1 rounded">02</span>
+             </div>
+             <h3 class="font-semibold text-blue-900 text-lg">Global & Local Partnerships</h3>
+               <p class="text-gray-600 text-sm">
+                We connect Osun’s innovators with national and international opportunities.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="flex-1">
+      <img src="C:\Users\Owner\Pictures\oroki hero pic.jpg" alt="hero banner" class="her">
+    </div>
+  </div>
+</section>
+<section class="collab">
+  <div class="jinus">
+    <h1>Join Us in Building Osun’s Innovation Future</h1>
+  </div>
+</section>
+ <footer class="flex-footer">
+    <section>
+      <div class="flex-footer-container">
+        <div class="flex-logo-container">
+          <img src="https://orokihub.com.ng/wp-content/uploads/2025/09/ximage-1-300x164.png.pagespeed.ic.qD4Pe9C42l.png" alt="" class="logon">
+          <p class="footer-cta">
+            Empowering Osun’s innovators,<br>
+            SMEs, and communities through<br>
+            digital skills, entrepreneurship,<br>
+            and inclusive innovation.
+          </p>
+        </div>
+      </div>
+    </section>
+ </footer>
+</body>
+</html>
