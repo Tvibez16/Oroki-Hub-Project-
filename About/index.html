@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Include this script tag or install @tailwindplus/elements via npm: -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script> -->
+<header class="bg-gray-900" style="background-color: white;"  >
+  <nav aria-label="Global" class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
+    <div class="flex lg:flex-1">
+      <a href="#" class="-m-1.5 p-1.5">
+        <span class="sr-only">Your Company</span>
+<img src="https://orokihub.com.ng/wp-content/uploads/2025/09/ximage-1-300x164.png.pagespeed.ic.qD4Pe9C42l.png" alt="" class="h-[60px] w-auto" />
+      </a>
+    </div>
+    <div class="flex lg:hidden">
+      <button type="button" command="show-modal" commandfor="mobile-menu" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-400">
+        <span class="sr-only">Open main menu</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6">
+          <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </button>
+    </div>
+    
+    <el-popover-group>
+    <button popovertarget="desktop-menu-product" class="flex items-center gap-x-1 text-sm font-semibold text-white">Menu</button>
+    <div class="hidden lg:flex items-center justify-center gap-x-12" >
+       <a href="#" class="text-sm font-semibold text-black">Programs</a>
+      <a href="#" class="text-sm font-semibold text-black">Impact</a>
+      <a href="#" class="text-sm font-semibold text-black">About</a>
+    </div>
+    </el-popover-group>
+    <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+  <a href="#" class="text-sm font-semibold text-white">Log in <span aria-hidden="true">&rarr;</span></a>
+    </div>
+        <button type="button" class="text-white bg-yellow-700 hover:bg-yellow-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-yellow-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-yellow-800">join us</button>
+
+  </nav>
+  <el-dialog>
+    <dialog id="mobile-menu" class="backdrop:bg-transparent lg:hidden">
+      <div tabindex="0" class="fixed inset-0 focus:outline-none">
+        <el-dialog-panel class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gray-900 p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-100/10">
+          <div class="flex items-center justify-between">
+            <a href="#" class="-m-1.5 p-1.5">
+              <span class="sr-only">Your Company</span>
+              <img src="https://orokihub.com.ng/wp-content/uploads/2025/09/ximage-1-300x164.png.pagespeed.ic.qD4Pe9C42l.png"  alt="" class="h-8 w-auto" />
+            </a>
+            <button type="button" command="close" commandfor="mobile-menu" class="-m-2.5 rounded-md p-2.5 text-gray-400">
+              <span class="sr-only">Close menu</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6">
+                <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </button>
+          </div>
+          <div class="mt-6 flow-root">
+            <div class="-my-6 divide-y divide-white/10">
+              <div class="space-y-2 py-6">
+               
+                <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold text-white hover:bg-white/5">Programs</a>
+                <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold text-white hover:bg-white/5">Impact</a>
+                <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold text-white hover:bg-white/5">About</a>
+              </div>
+              <div class="py-6">
+                <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold text-white hover:bg-white/5">Log in</a>
+              </div>
+              
+              <button type="button" class="text-white bg-yellow-700 hover:bg-yellow-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-yellow-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-yellow-800">join us</button>
+  
+            </div>
+          </div>
+        </el-dialog-panel>
+      </div>
+    </dialog>
+  </el-dialog>
+<section style="background-color: rgb(43,113,252); border-radius: 16px; padding-bottom: 8%; padding-top: 8%;" class="bg-blue-600 text-white text-center py-10 rounded-3xl mx-4 mt-6">
+   
+    <h1 class="po" style="text-align: center; padding-top: 4%;  font-weight: 600;">About Oroki Innovation Hub</h1>
+    <p class="text-lg text-gray-200 mb-2">
+      <span class="font-semibold text-white">Home</span> 
+      <span class="text-gray-300" style="color: #08077f;">› About</span>
+    </p>
+</section>
+<section class="w-full min-h-screen bg-white flex justify-center items-center">
+  <div class="w-[95vw] h-[90vh] bg-white rounded-2xl shadow-xl flex flex-col md:flex-row overflow-hidden">
+
+    <!-- Image Section -->
+    <div class="flex-1 flex justify-center items-center bg-gray-100">
+      <img 
+        class="object-cover w-full h-full md:rounded-none" 
+        src="https://orokihub.com.ng/wp-content/uploads/2025/09/WHZ_6201-e1757211476178.jpg" 
+        alt="Tech Image">
+    </div>
+
+    <!-- Text Section -->
+    <div class="flex-1 flex flex-col justify-center p-10 bg-white">
+      <h5 class="text-3xl font-bold text-gray-900 mb-4" style="color:#08077f ;">
+        Our Story
+      </h5>
+
+      <div class="flex items-start">
+        <!-- Blue Line -->
+        <div class="w-2 h-20 bg-blue-600 mr-4 rounded-full"></div>
+
+        <!-- Paragraph -->
+        <p class="text-gray-700 text-lg leading-relaxed">
+          Since 2023, we’ve trained over 5,200 students, supported 275+ women entrepreneurs, and raised awareness on cybersecurity in 10 communities. Beyond training, Oroki Hub fosters innovation, collaboration, and opportunities that strengthen Osun’s economy from the ground up.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- main removed because page sections are self-contained -->
+<section>
+  <div class="flex-about-container">
+    <div class="flex-about-container-1">
+      <h3 class="abtint">About Us</h3>
+      <h2 class="inno">Building Osun’s
+        <br> Innovation
+        <br> Ecosystem</h2>
+        <p class="abt">Oroki Innovation Hub is a community space designed to<br>
+            bridge the digital divide, reduce unemployment, and<br>
+            empower innovators. Through incubation, training, and<br>
+            mentorship, we are shaping the next generation of changemakers.</p>
+            <a href="https://orokihub.com.ng/about" class="read"><button class="rdmr">Read More</button></a>
+    </div>
+    <div class="flex-about-container-2">
+      <h3 class="vision">Our Vision</h3>
+      <p class="vsnit">A thriving ecosystem where<br>
+        every youth, woman, and SME<br>
+        can access opportunities to<br>
+        grow through technology and<br>
+        innovation.</p>
+    </div>
+    <div class="flex-about-container-3">
+      <h3 class="vision">Our Mission</h3>
+      <p class="vsnit">To bridge the digital divide,<br>
+        empower entrepreneurs, and<br>
+        drive inclusive innovation in<br>
+        Osun State.</p>
+    </div>
+  </div>
+</section>
+<!-- Include Tailwind CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- Our Values Section -->
+<section class="bg-white py-20 px-6 md:px-16">
+  <div class="max-w-7xl mx-auto text-center">
+
+    <!-- Heading -->
+    <h2 class="text-4xl md:text-5xl font-bold text-blue-900 mb-12">
+      Our Values
+    </h2>
+
+    <!-- Values Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 justify-center">
+
+      <!-- Innovation -->
+      <div class="flex flex-col items-center justify-center bg-blue-900 text-white rounded-2xl p-10 shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300">
+        <div class="bg-blue-500 p-6 rounded-full mb-6">
+          <img src="https://cdn-icons-png.flaticon.com/512/616/616408.png" alt="Innovation Icon" class="w-10 h-10">
+        </div>
+        <h3 class="text-xl font-semibold">Innovation</h3>
+      </div>
+
+      <!-- Collaboration -->
+      <div class="flex flex-col items-center justify-center bg-gray-100 text-blue-900 rounded-2xl p-10 shadow-md hover:shadow-lg hover:scale-105 transition-all duration-300">
+        <div class="bg-blue-900 p-6 rounded-full mb-6">
+          <img src="../About/download (1).jpeg" alt="Collaboration Icon" class="w-10 h-10 invert">
+        </div>
+        <h3 class="text-xl font-semibold">Collaboration</h3>
+      </div>
+
+      <!-- Sustainability -->
+      <div class="flex flex-col items-center justify-center bg-blue-600 text-white rounded-2xl p-10 shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300">
+        <div class="bg-blue-900 p-6 rounded-full mb-6">
+          <img src="https://cdn-icons-png.flaticon.com/512/1025/1025911.png" alt="Sustainability Icon" class="w-10 h-10 invert">
+        </div>
+        <h3 class="text-xl font-semibold">Sustainability</h3>
+      </div>
+
+      <!-- Inclusivity -->
+      <div class="flex flex-col items-center justify-center bg-gray-100 text-blue-900 rounded-2xl p-10 shadow-md hover:shadow-lg hover:scale-105 transition-all duration-300">
+        <div class="bg-blue-900 p-6 rounded-full mb-6">
+          <img src="https://cdn-icons-png.flaticon.com/512/992/992700.png" alt="Inclusivity Icon" class="w-10 h-10 invert">
+        </div>
+        <h3 class="text-xl font-semibold">Inclusivity</h3>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- Make sure Tailwind CSS is available -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- Why Choose Section -->
+<section class="bg-white py-16 px-6 md:px-16">
+  <div class="max-w-6xl mx-auto flex flex-col-reverse md:flex-row items-center gap-10">
+
+    <div class="flex-1">
+      <p class="text-blue-800 font-semibold mb-2" id="o">Why Choose Oroki Hub?</p>
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 leading-tight" id="o">
+        Oroki Hub combines innovation, community, and opportunity to create lasting impact for youth, women, and businesses in Osun State.
+      </h2>
+
+      <!-- Feature list -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+        <!-- Feature 01 -->
+        <div class="flex items-start gap-4">
+          <div class="flex-shrink-0 bg-blue-900 text-white rounded-lg w-10 h-10 flex justify-center items-center">
+            <span class="font-semibold">01</span>
+          </div>
+          <div>
+            <h3 class="text-lg font-bold text-blue-900">Inclusive & Accessible</h3>
+            <p class="text-gray-600">
+              From secondary school students to PWDs, our programs are open to everyone.
+            </p>
+          </div>
+        </div>
+
+        <!-- Feature 02 -->
+        <div class="flex items-start gap-4">
+          <div class="flex-shrink-0 bg-blue-900 text-white rounded-lg w-10 h-10 flex justify-center items-center">
+            <span class="font-semibold">02</span>
+          </div>
+          <div>
+            <h3 class="text-lg font-bold text-blue-900">Global & Local Partnerships</h3>
+            <p class="text-gray-600">
+              We connect Osun’s innovators with national and international opportunities.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right side: Image -->
+    <div class="flex-1">
+      <img 
+        src="https://orokihub.com.ng/wp-content/uploads/2025/09/WHZ_6201-e1757211476178.jpg" 
+        alt="Oroki Hub Image" 
+        class="w-full rounded-2xl object-cover shadow-lg"
+      />
+    </div>
+
+  </div>
+</section>
+
+
+</body>
+</html>
