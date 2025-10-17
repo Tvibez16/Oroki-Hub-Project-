@@ -1,0 +1,115 @@
+.bg{
+    font-family: Poppins, sans-serif;
+font-size: 72px;
+font-weight: 500;
+line-height: 79.2px;
+color: rgb(5, 4, 127);
+}
+.ft{
+    font-family: Poppins, sans-serif;
+font-size: 18.4px;
+font-weight: 400;
+line-height: 27.6px;
+color: rgb(255, 255, 255);
+}
+.abd{
+    font-family: Poppins, sans-serif;
+font-size: 48px;
+font-weight: 500;
+line-height: 52.8px;
+color: rgb(5, 4, 127);
+}
+.ty{
+    font-family: Poppins, sans-serif;
+font-size: 21px;
+font-weight: 500;
+line-height: 23.1px;
+color: rgb(5, 4, 127);
+}
+.pd{
+    font-family: Poppins, sans-serif;
+font-size: 48px;
+font-weight: 500;
+line-height: 52.8px;
+color: rgb(5, 4, 127);
+}
+.flex-academic-container{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(248,248,248);
+}
+.skill{
+    width: 300px;
+    height: 200px;
+    border-radius: 25px;
+    margin: 5%;
+    padding-left: 10%;
+    padding-top: 5%;
+}
+.flex-impact-container{
+    display: flex;
+    flex-direction: column;
+}
+.stim{
+    font-family: Poppins, sans-serif;
+    font-size: 20.8px;
+    font-weight: 600;
+    line-height: 22.88px;
+    color: rgb(5, 4, 127);
+}
+.flex-impact-container-1{
+    padding-top: 15px;
+    padding-left: 50px;
+}
+.impt{
+    font-family: Poppins, sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 20px;
+    color: rgb(122, 122, 122);
+}
+.ola{
+    font-family: Poppins, sans-serif;
+font-size: 17px;
+font-weight: 400;
+line-height: 24px;
+color: rgb(255, 255, 255);
+text-align: center;
+padding-left: 15%;
+padding-right: 15%;
+}
+.zip{
+    font-family: Roboto, sans-serif;
+font-size: 20px;
+font-weight: 500;
+line-height: 16.5088px;
+color: rgb(0, 37, 142);
+
+}
+.col{
+    font-family: Poppins, sans-serif;
+font-size: 48px;
+font-weight: 500;
+line-height: 52.8px;
+color: rgb(5, 4, 127);
+font-weight: 5o8;
+}
+.man{
+    font-family: Poppins, sans-serif;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+color: rgb(122, 122, 122);
+}
+ .logon{
+    width: 130px;
+    height: 60px;
+}
+.flex-footer-container{
+    background-color: rgb(5,4,127);
+}
+.flex-logo-container{
+    padding-top: 85px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+}
