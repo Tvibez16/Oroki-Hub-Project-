@@ -232,64 +232,46 @@
     </div>
   </div>
 </section>
-<!-- Impact / Count-up Section -->
+<!-- Impact Section -->
 <section id="impact-section" class="py-20 bg-gray-50">
   <div class="max-w-screen-xl mx-auto px-6">
     <!-- Heading -->
     <div class="text-center mb-12">
-      <h2 id="impact-heading" class="text-3xl font-extrabold sm:text-4xl">
+      <h2 id="impact-heading" class="text-3xl font-extrabold sm:text-4xl text-[#05047f]">
         Our Impact At A Glance
       </h2>
     </div>
 
-    <!-- Stats Box -->
-    <div class="bg-white rounded-2xl shadow-xl border border-gray-200 p-10">
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
-        <!-- Stat 1 -->
-        <div class="flex flex-col items-center">
-          <div id="stat1" class="text-5xl font-extrabold">0</div>
-          <div class="mt-2 text-lg font-medium">Students Reached</div>
-        </div>
+    <!-- Stats Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+      <!-- Card 1 -->
+      <div class="flex flex-col items-center justify-center p-10 rounded-2xl shadow-lg bg-[#05047f] text-white">
+        <div id="stat1" class="text-5xl font-extrabold">0</div>
+        <div class="mt-2 text-lg font-medium">Students Reached</div>
+      </div>
 
-        <!-- Stat 2 -->
-        <div class="flex flex-col items-center">
-          <div id="stat2" class="text-5xl font-extrabold">0</div>
-          <div class="mt-2 text-lg font-medium">Women Entrepreneurs Supported</div>
-        </div>
+      <!-- Card 2 -->
+      <div class="flex flex-col items-center justify-center p-10 rounded-2xl shadow-lg bg-[#eaeaea] text-gray-900">
+        <div id="stat2" class="text-5xl font-extrabold">0</div>
+        <div class="mt-2 text-lg font-medium">Women Entrepreneurs Supported</div>
+      </div>
 
-        <!-- Stat 3 -->
-        <div class="flex flex-col items-center">
-          <div id="stat3" class="text-5xl font-extrabold">0</div>
-          <div class="mt-2 text-lg font-medium">Communities Trained on Cybersecurity</div>
-        </div>
+      <!-- Card 3 -->
+      <div class="flex flex-col items-center justify-center p-10 rounded-2xl shadow-lg bg-[#ffd200] text-gray-900">
+        <div id="stat3" class="text-5xl font-extrabold">0</div>
+        <div class="mt-2 text-lg font-medium">Communities Trained on Cybersecurity</div>
+      </div>
 
-        <!-- Stat 4 -->
-        <div class="flex flex-col items-center">
-          <div id="stat4" class="text-5xl font-extrabold">0</div>
-          <div class="mt-2 text-lg font-medium">Students Introduced to Maker Culture</div>
-        </div>
+      <!-- Card 4 -->
+      <div class="flex flex-col items-center justify-center p-10 rounded-2xl shadow-lg bg-[#05047f] text-white">
+        <div id="stat4" class="text-5xl font-extrabold">0</div>
+        <div class="mt-2 text-lg font-medium">Students Introduced to Maker Culture</div>
       </div>
     </div>
   </div>
 
   <script>
-    // 🎨 Easy color customization
-    const colors = {
-      heading: "#05047f",
-      numbers: "#1e40af", // Indigo-800
-      text: "#374151",    // Gray-700
-      background: "#ffffff"
-    };
-
-    // Apply color styles dynamically (safe-guard: make sure elements exist)
-    const headingEl = document.getElementById("impact-heading");
-    if (headingEl) headingEl.style.color = colors.heading;
-    document.querySelectorAll("#impact-section dd, #impact-section div[id^='stat']").forEach(el => el.style.color = colors.numbers);
-    document.querySelectorAll("#impact-section .mt-2").forEach(el => el.style.color = colors.text);
-    const sectionEl = document.getElementById("impact-section");
-    if (sectionEl) sectionEl.style.backgroundColor = colors.background;
-
-    // Counting targets
+    // 💫 Count-up configuration
     const counters = [
       { id: "stat1", target: 5200, suffix: "+" },
       { id: "stat2", target: 272, suffix: "+" },
@@ -297,46 +279,39 @@
       { id: "stat4", target: 92, suffix: "+" }
     ];
 
-    // Smooth count-up using requestAnimationFrame
+    // Smooth count-up animation
     function animateCount(element, endValue, duration = 1500, suffix = "") {
       const startTime = performance.now();
       function step(now) {
         const progress = Math.min((now - startTime) / duration, 1);
         const value = Math.floor(progress * endValue);
         element.textContent = value + (progress === 1 ? suffix : "");
-        if (progress < 1) {
-          requestAnimationFrame(step);
-        }
+        if (progress < 1) requestAnimationFrame(step);
       }
       requestAnimationFrame(step);
     }
 
-    // Start all counters
+    // Trigger animation when section enters view
+    const section = document.getElementById("impact-section");
     function startCounters() {
       counters.forEach(c => {
         const el = document.getElementById(c.id);
         if (!el) return;
-        // choose duration proportional to magnitude but bounded
-        const baseDuration = 1500;
-        const duration = Math.min(Math.max(baseDuration, c.target * 0.5), 3000);
-        animateCount(el, c.target, duration, c.suffix || "");
+        animateCount(el, c.target, 2000, c.suffix);
       });
     }
 
-    // Use IntersectionObserver to trigger when section is visible,
-    // but also fallback to immediate run for browsers without support.
-    if ("IntersectionObserver" in window && sectionEl) {
-      const obs = new IntersectionObserver((entries, observer) => {
+    if ("IntersectionObserver" in window && section) {
+      const observer = new IntersectionObserver((entries, obs) => {
         entries.forEach(entry => {
           if (entry.isIntersecting) {
             startCounters();
-            observer.disconnect();
+            obs.disconnect();
           }
         });
       }, { threshold: 0.25 });
-      obs.observe(sectionEl);
+      observer.observe(section);
     } else {
-      // Fallback — run immediately
       startCounters();
     }
   </script>
