@@ -85,3 +85,10 @@ color: rgb(5, 4, 127);
 .flex-1{
     color: #05047f;
 }
+#ru{
+    font-family: Poppins, sans-serif;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+color: rgb(122, 122, 122);
+}
