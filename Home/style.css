@@ -99,10 +99,10 @@
     padding-left: 120px;
 }
 .flex-partners-container-3{
-    background-color: rgb(255,210,0);
-    border-radius: 25px;
-    width: 300px;
-    height: 200px;
+    padding-left: 50px;
+}
+.ain{
+    padding-left: 100px;
 }
 .srvcs{
     font-family: Roboto, sans-serif;
@@ -203,5 +203,22 @@
     color: white;
 }
 .tgln{
+    text-align: center;
+}
+.flex-logo-container{
+    display: flex;
+    flex-direction: row;
+    padding-top: 30px;
+}
+.fb{
+    border-radius: 15px;
+}
+.tw{
+    border-radius: 45px;
+}
+.ntda{
+    text-align: center;
+}
+.osl{
     text-align: center;
 }
