@@ -6,10 +6,12 @@
     <title>About</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
 </head>
 <body>
-    <!-- Include this script tag or install @tailwindplus/elements via npm: -->
-<!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script> -->
 <header class="bg-gray-900" style="background-color: white;"  >
   <nav aria-label="Global" class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
     <div class="flex lg:flex-1">
@@ -88,7 +90,6 @@
 <section class="w-full min-h-screen bg-white flex justify-center items-center">
   <div class="w-[95vw] h-[90vh] bg-white rounded-2xl shadow-xl flex flex-col md:flex-row overflow-hidden">
 
-    <!-- Image Section -->
     <div class="flex-1 flex justify-center items-center bg-gray-100">
       <img 
         class="object-cover w-full h-full md:rounded-none" 
@@ -96,17 +97,14 @@
         alt="Tech Image">
     </div>
 
-    <!-- Text Section -->
     <div class="flex-1 flex flex-col justify-center p-10 bg-white">
       <h5 class="text-3xl font-bold text-gray-900 mb-4" style="color:#08077f ;">
         Our Story
       </h5>
 
       <div class="flex items-start">
-        <!-- Blue Line -->
         <div class="w-2 h-20 bg-blue-600 mr-4 rounded-full"></div>
 
-        <!-- Paragraph -->
         <p class="text-gray-700 text-lg leading-relaxed">
           Since 2023, we’ve trained over 5,200 students, supported 275+ women entrepreneurs, and raised awareness on cybersecurity in 10 communities. Beyond training, Oroki Hub fosters innovation, collaboration, and opportunities that strengthen Osun’s economy from the ground up.
         </p>
@@ -115,7 +113,6 @@
 
   </div>
 </section>
-<!-- main removed because page sections are self-contained -->
 <section>
   <div class="flex-about-container">
     <div class="flex-about-container-1">
@@ -146,22 +143,16 @@
     </div>
   </div>
 </section>
-<!-- Include Tailwind CDN -->
-<script src="https://cdn.tailwindcss.com"></script>
 
-<!-- Our Values Section -->
 <section class="bg-white py-20 px-6 md:px-16">
   <div class="max-w-7xl mx-auto text-center">
 
-    <!-- Heading -->
     <h2 class="text-4xl md:text-5xl font-bold text-blue-900 mb-12">
       Our Values
     </h2>
 
-    <!-- Values Grid -->
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 justify-center">
 
-      <!-- Innovation -->
       <div class="flex flex-col items-center justify-center bg-blue-900 text-white rounded-2xl p-10 shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300">
         <div class="bg-blue-500 p-6 rounded-full mb-6">
           <img src="https://cdn-icons-png.flaticon.com/512/616/616408.png" alt="Innovation Icon" class="w-10 h-10">
@@ -169,7 +160,6 @@
         <h3 class="text-xl font-semibold">Innovation</h3>
       </div>
 
-      <!-- Collaboration -->
       <div class="flex flex-col items-center justify-center bg-gray-100 text-blue-900 rounded-2xl p-10 shadow-md hover:shadow-lg hover:scale-105 transition-all duration-300">
         <div class="bg-blue-900 p-6 rounded-full mb-6">
           <img src="../About/download (1).jpeg" alt="Collaboration Icon" class="w-10 h-10 invert">
@@ -177,7 +167,6 @@
         <h3 class="text-xl font-semibold">Collaboration</h3>
       </div>
 
-      <!-- Sustainability -->
       <div class="flex flex-col items-center justify-center bg-blue-600 text-white rounded-2xl p-10 shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300">
         <div class="bg-blue-900 p-6 rounded-full mb-6">
           <img src="https://cdn-icons-png.flaticon.com/512/1025/1025911.png" alt="Sustainability Icon" class="w-10 h-10 invert">
@@ -185,7 +174,6 @@
         <h3 class="text-xl font-semibold">Sustainability</h3>
       </div>
 
-      <!-- Inclusivity -->
       <div class="flex flex-col items-center justify-center bg-gray-100 text-blue-900 rounded-2xl p-10 shadow-md hover:shadow-lg hover:scale-105 transition-all duration-300">
         <div class="bg-blue-900 p-6 rounded-full mb-6">
           <img src="https://cdn-icons-png.flaticon.com/512/992/992700.png" alt="Inclusivity Icon" class="w-10 h-10 invert">
@@ -232,37 +220,30 @@
     </div>
   </div>
 </section>
-<!-- Impact Section -->
 <section id="impact-section" class="py-20 bg-gray-50">
   <div class="max-w-screen-xl mx-auto px-6">
-    <!-- Heading -->
     <div class="text-center mb-12">
       <h2 id="impact-heading" class="text-3xl font-extrabold sm:text-4xl text-[#05047f]">
         Our Impact At A Glance
       </h2>
     </div>
 
-    <!-- Stats Grid -->
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
-      <!-- Card 1 -->
       <div class="flex flex-col items-center justify-center p-10 rounded-2xl shadow-lg bg-[#05047f] text-white">
         <div id="stat1" class="text-5xl font-extrabold" style="color:#7a7a7a ;">0</div>
         <div class="mt-2 text-lg font-medium" style="color: #7a7a7a;">Students Reached</div>
       </div>
 
-      <!-- Card 2 -->
       <div class="flex flex-col items-center justify-center p-10 rounded-2xl shadow-lg bg-[#eaeaea] text-gray-900">
         <div id="stat2" class="text-5xl font-extrabold" style="color: #7a7a7a;">0</div>
         <div class="mt-2 text-lg font-medium" style="color: #7a7a7a;">Women Entrepreneurs Supported</div>
       </div>
 
-      <!-- Card 3 -->
       <div class="flex flex-col items-center justify-center p-10 rounded-2xl shadow-lg bg-[#ffd200] text-gray-900">
         <div id="stat3" class="text-5xl font-extrabold" style="color: #1f137c;">0</div>
         <div class="mt-2 text-lg font-medium" style="color: #1f137c;">Communities Trained on Cybersecurity</div>
       </div>
 
-      <!-- Card 4 -->
       <div class="flex flex-col items-center justify-center p-10 rounded-2xl shadow-lg bg-[#05047f] text-white">
         <div id="stat4" class="text-5xl font-extrabold" style="color: #7a7a7a;">0</div>
         <div class="mt-2 text-lg font-medium" style="color: #7aa7a7;">Students Introduced to Maker Culture</div>
@@ -317,90 +298,102 @@
   </script>
 </section>
 <section class="py-16 bg-gray-50">
-<div class="container">
-  <div class="card-1">
-    <div class="text-center mb-12">
-      <h2 id="impact-heading" class="text-3xl font-extrabold sm:text-4xl text-[#05047f]">
-        Meet Our Team
-      </h2>
-    </div>
+  <div class="text-center mb-12">
+    <h2 class="text-3xl font-extrabold sm:text-4xl text-[#05047f]">
+      Meet Our Team
+    </h2>
+  </div>
 
-    <!-- Team Container (aligned to left) -->
-    <div class="flex flex-wrap gap-8 justify-start px-8">
-      <!-- Card 1 -->
-      <div class="flex flex-col bg-white shadow-lg border border-slate-200 rounded-2xl w-80 sm:w-96">
-        <div class="m-4 overflow-hidden rounded-full flex justify-center items-center">
-          <img
-            class="h-40 w-40 rounded-full border-4 border-white shadow-md object-cover"
-            src="download.jpeg"
-            alt="profile-picture"
-          />
-        </div>
-
-        <div class="p-6 text-center">
-          <h4 class="mb-1 text-2xl font-semibold text-slate-800">
-            Rukayat Adekola
-          </h4>
-          <p class="text-sm font-semibold text-slate-500 uppercase">
-            Co-founder/CEO
-          </p>
-          <p class="text-base text-slate-600 mt-4 font-light" id="ru">
-            A professional Project Manager and Digital Media Expert with 4 years experience
-            working with youths and SMEs.
-          </p>
-        </div>
-
-        <!-- Social Icons -->
-        <div class="flex items-center justify-center space-x-4 mb-6">
-          <a href="#" class="bg-gray-400 text-white rounded-full p-3 hover:bg-blue-600 transition">
-            <i class="fab fa-facebook-f"></i>
-          </a>
-          <a href="#" class="bg-gray-400 text-white rounded-full p-3 hover:bg-blue-700 transition">
-            <i class="fab fa-linkedin-in"></i>
-          </a>
-        </div>
-      </div>
-    </div>
-    </div>
+  <div class="flex flex-wrap justify-center gap-8 px-8">
     
-    <div class="flex flex-wrap gap-8 justify-start px-8">
-      <!-- Card 1 -->
-      <div class="flex flex-col bg-white shadow-lg border border-slate-200 rounded-2xl w-80 sm:w-96">
-        <div class="m-4 overflow-hidden rounded-full flex justify-center items-center">
-          <img
-            class="h-40 w-40 rounded-full border-4 border-white shadow-md object-cover"
-            src="download (1).jpeg"
-            alt="profile-picture"
-          />
-        </div>
-
-        <div class="p-6 text-center">
-          <h4 class="mb-1 text-2xl font-semibold text-slate-800">
-            Lukaman Adeoti
-          </h4>
-          <p class="text-sm font-semibold text-slate-500 uppercase">
-            Co-founder
-          </p>
-          <p class="text-base text-slate-600 mt-4 font-light" id="ru">
-            Digital entrepreneur, community builder, and digital literacy advocate with over 6 years of experience empowering SMEs and youth in Osun State.
-           
-          </p>
-        </div>
-
-        <!-- Social Icons -->
-        <div class="flex items-center justify-center space-x-4 mb-6">
-          <a href="#" class="bg-gray-400 text-white rounded-full p-3 hover:bg-blue-600 transition">
-            <i class="fab fa-facebook-f"></i>
-          </a>
-          <a href="#" class="bg-gray-400 text-white rounded-full p-3 hover:bg-blue-700 transition">
-            <i class="fab fa-linkedin-in"></i>
-          </a>
-        </div>
+    <!-- Card 1 -->
+    <div class="bg-white shadow-lg border border-slate-200 rounded-2xl w-80 sm:w-96 text-center">
+      <div class="m-4 flex justify-center">
+        <img class="h-40 w-40 rounded-full border-4 border-white shadow-md object-cover" src="download.jpeg" alt="Rukayat Adekola" />
+      </div>
+      <div class="p-6">
+        <h4 class="text-2xl font-semibold text-slate-800 mb-1">Rukayat Adekola</h4>
+        <p class="text-sm font-semibold text-slate-500 uppercase">Co-founder/CEO</p>
+        <p class="text-base text-slate-600 mt-4 font-light">A professional Project Manager and Digital Media Expert with 4 years experience working with youths and SMEs.</p>
+      </div>
+      <div class="flex justify-center space-x-4 mb-6">
+        <a href="#" class="bg-gray-400 text-white rounded-full p-3 hover:bg-blue-600 transition"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="bg-gray-400 text-white rounded-full p-3 hover:bg-blue-700 transition"><i class="fab fa-linkedin-in"></i></a>
       </div>
     </div>
-</div>
+
+    <!-- Card 2 -->
+    <div class="bg-white shadow-lg border border-slate-200 rounded-2xl w-80 sm:w-96 text-center">
+      <div class="m-4 flex justify-center">
+        <img class="h-40 w-40 rounded-full border-4 border-white shadow-md object-cover" src="download (1).jpeg" alt="Lukman Adeoti" />
+      </div>
+      <div class="p-6">
+        <h4 class="text-2xl font-semibold text-slate-800 mb-1">Lukman Adeoti</h4>
+        <p class="text-sm font-semibold text-slate-500 uppercase">Co-founder</p>
+        <p class="text-base text-slate-600 mt-4 font-light">Digital entrepreneur, community builder, and digital literacy advocate with over 6 years of experience empowering SMEs and youth in Osun State.</p>
+      </div>
+      <div class="flex justify-center space-x-4 mb-6">
+        <a href="#" class="bg-gray-400 text-white rounded-full p-3 hover:bg-blue-600 transition"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="bg-gray-400 text-white rounded-full p-3 hover:bg-blue-700 transition"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="bg-white shadow-lg border border-slate-200 rounded-2xl w-80 sm:w-96 text-center">
+      <div class="m-4 flex justify-center">
+        <img class="h-40 w-40 rounded-full border-4 border-white shadow-md object-cover" src="Rukayat-Adekola (1).jpg" alt="Monsurat Adekola" />
+      </div>
+      <div class="p-6">
+        <h4 class="text-2xl font-semibold text-slate-800 mb-1">Monsurat Adekola</h4>
+        <p class="text-sm font-semibold text-slate-500 uppercase">Hub Manager</p>
+      </div>
+      <div class="flex justify-center space-x-4 mb-6">
+        <a href="#" class="bg-gray-400 text-white rounded-full p-3 hover:bg-blue-600 transition"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="bg-gray-400 text-white rounded-full p-3 hover:bg-blue-700 transition"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+
+  </div>
+</section>
+<section class="bg-white py-10">
+  <div class="container mx-auto">
+    <h2 class="text-center text-2xl font-bold text-gray-800 mb-8">
+      Our Partners
+    </h2>
+
+    <div class="flex flex-wrap justify-center items-center gap-12">
+
+      <img src="cropped-cropped-NITDA-Logo-new-03.png" alt="NITDA" class="h-20 object-contain" />
+
+      <img src="osun-tag-e1757205944317.jpg" alt="Osun State" class="h-24 object-contain" />
+
+      <div class="flex items-center justify-center bg-[#ffde00] rounded-2xl px-10 py-6">
+        <img src="AIN-LG-2-1.webp" alt="AI in Nigeria" class="h-20 object-contain mr-8" />
+        <img src="dsn-logo.png" alt="DSN" class="h-20 object-contain" />
+      </div>
+
+    </div>
+  </div>
 </section>
 
+  <section class="join-section">
+  <div class="join-container">
+    <h1>
+      Join Us In 
+      <span class="highlight">Building</span>
+      Osun’s Innovation <br> Future
+    </h1>
 
+    <p class="join-text">
+      Whether you are a student, entrepreneur, or partner, there’s a place for you at Oroki Hub.
+      Be part of our mission to drive innovation and opportunity for all.
+    </p>
+
+    <div class="hero-actions">
+      <a href="#" class="btn">Join The Hub</a>
+      <p class="phone"><i class="fas fa-phone-alt"></i> +234 816 070 0224</p>
+    </div>
+  </div>
+</section>
 </body>
 </html>
