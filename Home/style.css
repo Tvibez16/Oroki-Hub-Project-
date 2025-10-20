@@ -216,10 +216,14 @@
 }
 .tw{
     border-radius: 45px;
+    padding-left: 40px;
 }
 .ntda{
     text-align: center;
 }
 .osl{
     text-align: center;
+}
+.ig{
+    padding-left: 40px;
 }
