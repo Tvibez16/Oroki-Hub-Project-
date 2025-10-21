@@ -130,3 +130,18 @@ font-weight: 5o8;
     color: white;
     background-color: rgb(5,4,127);
 }
+.po{
+ font-family: Poppins, sans-serif;
+font-size: 54px;
+font-weight: 500;
+line-height: 56.1px;
+color: rgb(5, 4, 127);  
+}
+.on{
+    font-family: Poppins, sans-serif;
+font-size: 18.4px;
+font-weight: 500;
+line-height: 27.6px;
+color: rgb(5, 4, 127);
+
+}
