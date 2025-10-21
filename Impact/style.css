@@ -126,37 +126,6 @@ text-align: center;
 padding-top: 4%;
 padding-bottom: 4%;
 }
-.flex-partners-container{
-    display: flex;
-    flex-direction: row;
-    padding-top: 20px;
-    padding-left: 140px;
-}
-.nitda{
-    width: 200px;
-    height: 50px;
-    padding-left: 50px;
-    padding: top 14px;
-}
-.partners{
-    font-family: Poppins, sans-serif;
-    font-size: 48px;
-    font-weight: 500;
-    line-height: 52.8px;
-    color: rgb(5, 4, 127);
-    text-align: center;
-    padding-top: 120px;
-}
-.flex-partners-container-2{
-    padding-left: 120px;
-    padding-right: 70px;
-}
-.flex-partners-container-3{
-    background-color: rgb(255,210,0);
-    border-radius: 25px;
-    width: 300px;
-    height: 200px;
-}
 .srvcs{
     font-family: Roboto, sans-serif;
     font-size: 20px;
@@ -219,7 +188,7 @@ padding-right: 5%;
 .flex-footer-container{
     background-color: rgb(5,4,127);
 }
-.flex-logo-container{
+.flex-log-container{
     padding-top: 25px;
     padding-bottom: 15px;
     padding-left: 30px;
