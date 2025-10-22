@@ -144,14 +144,17 @@
   </div>
 </section>
 <section>
-  <h3 class="srvcs"><b>Our Services</b></h3>
-  <div class="flex-services-container">
-    <div class="flex-services-container-1"></div>
-    <div class="flex-services-container-2"></div>
-  </div>
-  <div>
-    <div></div>
-    <div></div>
+  <div class="flex-service-container">
+    <div class="flex-service-container-1">
+      <div>
+        <h3></h3>
+      </div>
+      <div></div>
+    </div>
+    <div class="flex-service-container-2">
+      <div></div>
+      <div></div>
+    </div>
   </div>
 </section>
 <section class="bg-white py-12 px-8 ">
@@ -206,36 +209,175 @@
       <p class="phone"><i class="fas fa-phone-alt"></i> +234 816 070 0224</p>
     </div>
   </div>
-  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.9994292928836!2d4.531707673515078!3d7.789883607156115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10378742fd3a63c9%3A0xf06d2e43b7a5ff56!2sOroki%20Innovation%20Hub!5e0!3m2!1sen!2sng!4v1761057054257!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </section>
- <footer class="flex-footer">
-    <section>
-      <div class="flex-footer-container">
-        <div class="flex-ftr-container">
-          <img src="https://orokihub.com.ng/wp-content/uploads/2025/09/ximage-1-300x164.png.pagespeed.ic.qD4Pe9C42l.png" alt="" class="logon">
-          <p class="footer-cta">
-            Empowering Osun’s innovators,<br>
-            SMEs, and communities through<br>
-            digital skills, entrepreneurship,<br>
-            and inclusive innovation.
-          </p>
-          <div class="flex-logo-container">
-            <div class="flex-logo-container-1">
-              <img src="C:\Users\Owner\Downloads\facebook.png" alt="facebook logo" class="fb">
-            </div>
-            <div class="flex-logo-container-2">
-              <img src="C:\Users\Owner\Downloads\twitter.png" alt="twitter logo" class="tw">
-            </div>
-            <div class="flex-logo-container-3">
-              <img src="C:\Users\Owner\Downloads\instagram.png" alt="instagram logo" class="ig">
-            </div>
-            <div class="flex-logo-container-4">
-              <img src="C:\Users\Owner\Downloads\linkedin.svg" alt="linkedin logo" class="ln">
-            </div>
-          </div>
+<section id="impact-section" class="py-20 bg-gray-50">
+  <div class="max-w-screen-xl mx-auto px-6">
+    <div class="text-center mb-12">
+      <h2 id="impact-heading" class="text-3xl font-extrabold sm:text-4xl text-[#05047f]">
+        Our Impact At A Glance
+      </h2>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+      <div class="flex flex-col items-center justify-center p-10 rounded-2xl shadow-lg bg-[#05047f] text-white">
+        <div id="stat1" class="text-5xl font-extrabold" style="color:#7a7a7a ;">0</div>
+        <div class="mt-2 text-lg font-medium" style="color: #7a7a7a;">Students Reached</div>
+      </div>
+
+      <div class="flex flex-col items-center justify-center p-10 rounded-2xl shadow-lg bg-[#eaeaea] text-gray-900">
+        <div id="stat2" class="text-5xl font-extrabold" style="color: #7a7a7a;">0</div>
+        <div class="mt-2 text-lg font-medium" style="color: #7a7a7a;">Women Entrepreneurs Supported</div>
+      </div>
+
+      <div class="flex flex-col items-center justify-center p-10 rounded-2xl shadow-lg bg-[#ffd200] text-gray-900">
+        <div id="stat3" class="text-5xl font-extrabold" style="color: #1f137c;">0</div>
+        <div class="mt-2 text-lg font-medium" style="color: #1f137c;">Communities Trained on Cybersecurity</div>
+      </div>
+      <div class="flex flex-col items-center justify-center p-10 rounded-2xl shadow-lg bg-[#05047f] text-white">
+        <div id="stat4" class="text-5xl font-extrabold" style="color: #7a7a7a;">0</div>
+        <div class="mt-2 text-lg font-medium" style="color: #7aa7a7;">Students Introduced to Maker Culture</div>
+      </div>
+    </div>
+  </div>
+  <script>
+    // 💫 Count-up configuration
+    const counters = [
+      { id: "stat1", target: 5200, suffix: "+" },
+      { id: "stat2", target: 272, suffix: "+" },
+      { id: "stat3", target: 10, suffix: "+" },
+      { id: "stat4", target: 92, suffix: "+" }
+    ];
+
+    // Smooth count-up animation
+    function animateCount(element, endValue, duration = 1500, suffix = "") {
+      const startTime = performance.now();
+      function step(now) {
+        const progress = Math.min((now - startTime) / duration, 1);
+        const value = Math.floor(progress * endValue);
+        element.textContent = value + (progress === 1 ? suffix : "");
+        if (progress < 1) requestAnimationFrame(step);
+      }
+      requestAnimationFrame(step);
+    }
+
+    // Trigger animation when section enters view
+    const section = document.getElementById("impact-section");
+    function startCounters() {
+      counters.forEach(c => {
+        const el = document.getElementById(c.id);
+        if (!el) return;
+        animateCount(el, c.target, 2000, c.suffix);
+      });
+    }
+
+    if ("IntersectionObserver" in window && section) {
+      const observer = new IntersectionObserver((entries, obs) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            startCounters();
+            obs.disconnect();
+          }
+        });
+      }, { threshold: 0.25 });
+      observer.observe(section);
+    } else {
+      startCounters();
+    }
+  </script>
+</section>
+<section style="padding-left: 2%; padding-top: 10%;">
+  <p class="zip">
+    <b>Get In Touch</b>
+  </p><br>
+  <p class="col">
+    Let’s Work Together To <br>
+    Build Osun’s Future
+  </p><br>
+  <p class="man">
+    Partner with Oroki Hub to empower youth, support SMEs, and strengthen our <br>
+    local innovation ecosystem
+  </p>
+</section>
+<section class=" mx-auto px-8 py-16">
+    <div class="flex flex-col md:flex-row gap-6">
+     <div class="flex items-left bg-[#0B1D8F] text-white rounded-lg px-6 py-2 w-[280px] shadow">
+      <div class="bg-[#2430a3] p-2 rounded-full mr-1">
+         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z" /></svg>
+        </div>
+        <div style="padding-top: 4%;">
+          <h4 class="font-semibold text-white text-lg">📧Email</h4>
+          <p class="text-sm text-gray-200">official@orokihub.com.ng</p>
         </div>
       </div>
-    </section>
- </footer>
+     <div class="flex items-center bg-[#2196F3] text-white rounded-lg px-4 py-2 w-[280px] shadow">
+      <div class="bg-yellow-400 p-2 rounded-full mr-3 flex items-center justify-center">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-blue-900" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h2l3.6 7.59-1.35 2.44A1 1 0 008 17h8a1 1 0 00.9-.55l3.6-7.2A1 1 0 0020 8H7.21L6.27 5H3z" />
+          </svg>
+        </div>
+        <div>
+          <h4 class="font-semibold text-white text-lg">Phone</h4>
+          <p class="text-sm text-gray-200">+234 816 070 0224</p>
+        </div>
+      </div>
+    </div>
+  </section>
+   <section style="padding-left: 2%; padding-bottom: 8%;padding-top: 1%;border-radius: 100%;">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.9994292929!2d4.531707674367849!3d7.789883607154359!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10378742fd3a63c9%3A0xf06d2e43b7a5ff56!2sOroki%20Innovation%20Hub!5e0!3m2!1sen!2sng!4v1761057396880!5m2!1sen!2sng" width="600" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
+ <footer class="bg-[#000a7c] text-white py-14 px-6 font-sans">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10">
+    <div>
+      <img src="C:\Users\Owner\Desktop\oroki logo.png" alt="Oroki Hub Logo" class="mb-4 w-28">
+      <p class="text-sm leading-relaxed text-gray-200">
+        Empowering Osun’s innovators, SMEs, and communities through digital skills,
+        entrepreneurship, and inclusive innovation.
+      </p>
+      <div class="flex space-x-3 mt-5">
+        <a href="https://www.facebook.com/orokihub/" class="w-8 h-8 flex items-center justify-center bg-white/10 rounded hover:bg-blue-500 transition"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="w-8 h-8 flex items-center justify-center bg-white/10 rounded hover:bg-blue-500 transition"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/orokihub/" class="w-8 h-8 flex items-center justify-center bg-white/10 rounded hover:bg-blue-500 transition"><i class="fab fa-instagram"></i></a>
+        <a href="https://ng.linkedin.com/company/orokihub" class="w-8 h-8 flex items-center justify-center bg-white/10 rounded hover:bg-blue-500 transition"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+    <div>
+      <h3 class="text-blue-400 text-lg font-semibold mb-4">Other Pages</h3>
+      <ul class="space-y-2 text-sm text-gray-200">
+        <li><a href="../programs/index.html" class="hover:text-yellow-400 transition">Programs</a></li>
+        <li><a href="../about/index.html" class="hover:text-yellow-400 transition">About</a></li>
+        <li><a href="../impact/index.html" class="hover:text-yellow-400 transition">Impact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-blue-400 text-lg font-semibold mb-4">Quick Links</h3>
+      <ul class="space-y-2 text-sm text-gray-200">
+        <li><a href="#" class="hover:text-yellow-400 transition">Privacy Policy</a></li>
+        <li><a href="#" class="hover:text-yellow-400 transition">Terms of Use</a></li>
+        <li><a href="#" class="hover:text-yellow-400 transition">Disclaimer</a></li>
+        <li><a href="#" class="hover:text-yellow-400 transition">FAQ</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-blue-400 text-lg font-semibold mb-4">Contact Info</h3>
+      <ul class="space-y-3 text-sm text-gray-200">
+        <li class="flex items-start gap-3">
+          <i class="fas fa-map-marker-alt text-yellow-400 mt-1"></i>
+          <p>5, Elder Eludunni Oladimeji Street, Oroki Estate, Osogbo</p>
+        </li>
+        <li class="flex items-start gap-3">
+          <i class="fas fa-envelope text-yellow-400 mt-1"></i>
+          <a href="mailto:official@orokihub.com.ng" class="hover:underline">official@orokihub.com.ng</a>
+        </li>
+        <li class="flex items-start gap-3">
+          <i class="fas fa-phone-alt text-yellow-400 mt-1"></i>
+          <a href="tel:+2348160700224" class="hover:underline">+234 816 070 0224</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="border-t border-white/20 mt-10 pt-6 text-center text-xs text-gray-300">
+    © 2025 Oroki Innovation Hub. All Rights Reserved.
+  </div>
+</footer>
 </body>
 </html>
