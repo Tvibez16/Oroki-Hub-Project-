@@ -288,6 +288,31 @@ color: rgb(122, 122, 122);
 .phone i {
   margin-right: 8px;
 }
+.svs{
+    text-align: center;
+    font-family: Roboto, sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 22px;
+    color: rgb(0, 37, 142);
+    padding-top: 40px;
+}
+.dst{
+    font-size: 20px;
+}
+.flex-service-container-1{
+    display: flex;
+    flex-direction: row;
+    padding-left: 50px;
+    padding-top: 40px;
+    color: white;
+}
+.flex-service-container-1a{
+    background-color: rgb(5,4,127);
+}
+.flex-service-container-1b{
+    background-color: rgb(43,114,255);
+}
 .flex-logo-container{
     display: flex;
     flex-direction: row;
