@@ -68,10 +68,13 @@ color: rgb(5, 4, 127);
     line-height: 24px;
     color: rgb(122, 122, 122);
 }
-
-
-
-
+.oma{
+    font-family: Poppins, sans-serif;
+font-size: 18.4px;
+font-weight: 400;
+line-height: 27.6px;
+color: rgb(255, 255, 255);
+}
 .flex-academic-container{
     display: flex;
     flex-direction: row;
@@ -152,80 +155,34 @@ text-align: center;
 padding-left: 15%;
 padding-right: 15%;
 }
-.zip{
-    font-family: Roboto, sans-serif;
-font-size: 20px;
-font-weight: 500;
-line-height: 16.5088px;
-color: rgb(0, 37, 142);
+.phone i {
+  margin-right: 8px;
+}
+.contact-section {
+  max-width: 800px;
+  margin: 100px auto;
+  padding: 0 20px;
+  font-family: "Poppins", sans-serif;
+}
 
+.section-subtitle {
+  color: #1e3a8a; 
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 10px;
 }
-.col{
-    font-family: Poppins, sans-serif;
-font-size: 48px;
-font-weight: 500;
-line-height: 52.8px;
-color: rgb(5, 4, 127);
-font-weight: 5o8;
+
+.section-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #001e80; 
+  line-height: 1.3;
+  margin-bottom: 15px;
 }
-.man{
-    font-family: Poppins, sans-serif;
-font-size: 16px;
-font-weight: 400;
-line-height: 24px;
-color: rgb(122, 122, 122);
-}
-.oma{
-    font-family: Poppins, sans-serif;
-font-size: 18.4px;
-font-weight: 400;
-line-height: 27.6px;
-color: rgb(255, 255, 255);
-text-align: center;
-padding-left: 5%;
-padding-right: 5%;
-}
-.flex-footer-container{
-    background-color: rgb(5,4,127);
-}
-.flex-log-container{
-    padding-top: 25px;
-    padding-bottom: 15px;
-    padding-left: 30px;
-}
-.footer-cta{
-    font-family: Poppins, sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    color: white;
-    padding-top: 25px;
-}
-.collab{
-    background-color: rgb(43,114,255);
-    border-radius: 25px;
-}
-.jinus{
-    padding-top: 65px;
-    padding-bottom: 50px;
-}
-.juib{
-    text-align: center;
-    font-family: Poppins, sans-serif;
-    font-size: 48px;
-    font-weight: 500;
-    line-height: 52.8px;
-    color: rgb(5, 4, 127);
-}
-.build{
-    color: white;
-    background-color: rgb(5,4,127);
-}
-.img{
-    width: 150px;
-    height: auto;
-}
-.coni{
-    width: 1.5pc;
-    height: auto;
+
+.section-desc {
+  color: #6b7280; 
+  font-size: 1.05rem;
+  line-height: 1.7;
+  max-width: 650px;
 }
